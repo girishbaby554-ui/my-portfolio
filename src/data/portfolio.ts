@@ -21,8 +21,8 @@ export const profile = {
   title: 'Full Stack Developer',
   intro:
     "I'm Girish, a B.Tech Computer Science and Artificial Intelligence student passionate about programming, web development, artificial intelligence, and building innovative digital solutions.",
-  photoUrl: '/profile.jpg',
-  resumeUrl: '/resume.pdf',
+  photoUrl: `${import.meta.env.BASE_URL}profile.jpg`,
+  resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`,
   email: 'your.email@example.com',
   githubUrl: 'https://github.com/girishbaby554-ui',
   linkedinUrl: '',
