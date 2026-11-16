@@ -38,6 +38,10 @@ export default function ContactForm() {
     if (Object.keys(validationErrors).length > 0) return;
 
     setStatus('submitting');
+    if (!supabase) {
+      setStatus('error');
+      return;
+    }
     const { error } = await supabase.from('contact_messages').insert({
       name: values.name.trim(),
       email: values.email.trim(),
