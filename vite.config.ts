@@ -15,4 +15,4 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
 });
-base: '/my-portfolio/',
+
